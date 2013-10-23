@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="39017" started-at="2013-10-23T12:50:37Z" finished-at="2013-10-23T12:51:16Z">
+    <groups>
+      <group name="Login">
+        <method signature="Login.LogIn()[pri:0, instance:user.Login@26acb63d]" name="LogIn" class="user.Login"/>
+      </group> <!-- Login -->
+      <group name="Header">
+        <method signature="Headers.KazahHeader()[pri:0, instance:content.Headers@50958d49]" name="KazahHeader" class="content.Headers"/>
+        <method signature="Headers.NovinkiHeader()[pri:0, instance:content.Headers@50958d49]" name="NovinkiHeader" class="content.Headers"/>
+        <method signature="Headers.PlaylistHeader()[pri:0, instance:content.Headers@50958d49]" name="PlaylistHeader" class="content.Headers"/>
+        <method signature="Headers.UploadHeader()[pri:0, instance:content.Headers@50958d49]" name="UploadHeader" class="content.Headers"/>
+      </group> <!-- Header -->
+    </groups>
+    <test name="Test" duration-ms="39017" started-at="2013-10-23T12:50:37Z" finished-at="2013-10-23T12:51:16Z">
+      <class name="user.Login">
+        <test-method status="PASS" signature="LogIn()[pri:0, instance:user.Login@26acb63d]" name="LogIn" duration-ms="13421" started-at="2013-10-23T15:50:37Z" description="Тестируем логин" finished-at="2013-10-23T15:50:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogIn -->
+      </class> <!-- user.Login -->
+      <class name="content.Headers">
+        <test-method status="PASS" signature="getWebDriver()[pri:0, instance:content.Headers@50958d49]" name="getWebDriver" is-config="true" duration-ms="18" started-at="2013-10-23T15:50:37Z" finished-at="2013-10-23T15:50:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWebDriver -->
+        <test-method status="PASS" signature="MusicHeader()[pri:0, instance:content.Headers@50958d49]" name="MusicHeader" duration-ms="4349" started-at="2013-10-23T15:50:50Z" description="Проверяем ссылки на шапке &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-23T15:50:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MusicHeader -->
+        <test-method status="PASS" signature="NovinkiHeader()[pri:0, instance:content.Headers@50958d49]" name="NovinkiHeader" duration-ms="4364" depends-on-groups="Login" started-at="2013-10-23T15:50:54Z" description="Проверяем ссылки на шапке &lt;&lt;Новинки&gt;&gt;" finished-at="2013-10-23T15:50:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NovinkiHeader -->
+        <test-method status="PASS" signature="KazahHeader()[pri:0, instance:content.Headers@50958d49]" name="KazahHeader" duration-ms="5892" depends-on-groups="Login" started-at="2013-10-23T15:50:59Z" description="Проверяем ссылки на шапке &lt;&lt;Казахская&gt;&gt;" finished-at="2013-10-23T15:51:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KazahHeader -->
+        <test-method status="PASS" signature="PlaylistHeader()[pri:0, instance:content.Headers@50958d49]" name="PlaylistHeader" duration-ms="6182" depends-on-groups="Login" started-at="2013-10-23T15:51:05Z" description="Проверяем ссылки на шапке &lt;&lt;Мой плейлист&gt;&gt;" finished-at="2013-10-23T15:51:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlaylistHeader -->
+        <test-method status="PASS" signature="UploadHeader()[pri:0, instance:content.Headers@50958d49]" name="UploadHeader" duration-ms="3043" depends-on-groups="Login" started-at="2013-10-23T15:51:11Z" description="Проверяем ссылки на шапке &lt;&lt;Загрузить&gt;&gt;" finished-at="2013-10-23T15:51:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadHeader -->
+        <test-method status="PASS" signature="thearDown()[pri:0, instance:content.Headers@50958d49]" name="thearDown" is-config="true" duration-ms="1726" started-at="2013-10-23T15:51:14Z" finished-at="2013-10-23T15:51:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thearDown -->
+      </class> <!-- content.Headers -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

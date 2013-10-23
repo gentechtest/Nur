@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="content.Headers">
+        <methods>
+          <include name="UploadHeader"/>
+          <include name="MusicHeader"/>
+          <include name="NovinkiHeader"/>
+          <include name="PlaylistHeader"/>
+          <include name="KazahHeader"/>
+          <include name="thearDown"/>
+          <include name="getWebDriver"/>
+        </methods>
+      </class> <!-- content.Headers -->
+      <class name="user.Login">
+        <methods>
+          <include name="LogIn"/>
+        </methods>
+      </class> <!-- user.Login -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
