@@ -4,6 +4,7 @@
   <test name="Test">
   <dependencies>
    <group name="Header" depends-on="Login"></group>
+    <group name="SocialLinks" depends-on="Login"></group>
   </dependencies>
   <listeners>
   <listener class-name="basic.Log"></listener>
@@ -11,6 +12,7 @@
     <classes>
     <class name="user.Login"/>
     <class name="content.Headers"/>
+    <class name="content.SocialLinks"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="user.Login">
+      <class name="content.SocialLinks">
         <methods>
-          <include name="LogIn"/>
+          <include name="socialOnPlaylist"/>
           <include name="thearDown"/>
           <include name="getWebDriver"/>
         </methods>
-      </class> <!-- user.Login -->
+      </class> <!-- content.SocialLinks -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
