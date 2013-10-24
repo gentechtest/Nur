@@ -57,9 +57,8 @@ public class SocialLinkPage extends MethodsPage {
 	Facebook.isDisplayed();
 	}
 	catch (NoSuchElementException e) {
-	String errorUrl = driver.getCurrentUrl();
-	log("FAILED: by no such element error on page "+errorUrl);
-	Reporter.log("FAILED: by no such elemnt on page "+errorUrl);
+	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается соцсеть");
+	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается соцсеть");
 	throw new NoSuchElementException ();
 		  }
 	} 
