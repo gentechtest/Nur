@@ -9,7 +9,7 @@ public class Log extends TestListenerAdapter {
 	public void onTestStart(ITestResult ts){
 	System.out.println("--------------------------------------------------");
 	System.out.println(ts.getMethod().getDescription());
-	System.out.println("STARTED: [Class ="+ts.getTestClass().getRealClass().getSimpleName()+"] [Method ="+ts.getName()+"]");
+	System.out.println("STARTED: [Class="+ts.getTestClass().getRealClass().getSimpleName()+"] [Method="+ts.getName()+"]");
 	}
 
 }
