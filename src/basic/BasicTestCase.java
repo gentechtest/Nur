@@ -13,7 +13,7 @@ import data.UserData;
 //import data.UserData;
 
 public class BasicTestCase {
-	 public String baseUrl = ("http://www.music.nur.kz/");
+	 public String baseUrl = ("http://music.nur.kz/");
 	 protected String searchWord = "Armin";
 	 protected static WebDriver driver;
 	 public UserData user = new UserData("testpasswordx", "test2_nur");

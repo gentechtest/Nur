@@ -9,7 +9,7 @@ import basic.BasicTestCase;
 
 public class Headers extends BasicTestCase{
 	private ContentPage obj = PageFactory.initElements(getWebDriver(), ContentPage.class);
-	@Test(priority = 1, description="Проверяем ссылки на шапке <<Музыка>>")
+	@Test(priority = 1, groups={"Header"}, description="Проверяем ссылки на шапке <<Музыка>>")
 	public void MusicHeader () throws Exception {
 		driver.get(musicUrl);
 		assertPage(musicUrl);

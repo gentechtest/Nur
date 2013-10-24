@@ -12,6 +12,7 @@ public class Login extends BasicTestCase {
 	@Test(priority=1, groups={"Login"}, description="Тестируем логин")
 	public void LogIn () throws Exception {
 	driver.get(baseUrl);
+	assertPage(baseUrl);
 	loginPage.loginAs(user);
 	assertTrue(loginPage.isLogedIn());
 	}

@@ -3,17 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="content.Headers">
+      <class name="user.Login">
         <methods>
-          <include name="UploadHeader"/>
-          <include name="MusicHeader"/>
-          <include name="NovinkiHeader"/>
-          <include name="PlaylistHeader"/>
-          <include name="KazahHeader"/>
+          <include name="LogIn"/>
           <include name="thearDown"/>
           <include name="getWebDriver"/>
         </methods>
-      </class> <!-- content.Headers -->
+      </class> <!-- user.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

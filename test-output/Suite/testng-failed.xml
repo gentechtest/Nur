@@ -6,6 +6,13 @@
   </listeners>
   <test name="Test(failed)" parallel="none">
     <classes>
+      <class name="user.Login">
+        <methods>
+          <include name="LogIn"/>
+          <include name="thearDown"/>
+          <include name="getWebDriver"/>
+        </methods>
+      </class> <!-- user.Login -->
       <class name="content.Headers">
         <methods>
           <include name="UploadHeader"/>
@@ -13,8 +20,6 @@
           <include name="NovinkiHeader"/>
           <include name="PlaylistHeader"/>
           <include name="KazahHeader"/>
-          <include name="thearDown"/>
-          <include name="getWebDriver"/>
         </methods>
       </class> <!-- content.Headers -->
     </classes>
