@@ -21,8 +21,8 @@ public class SocialLinks extends BasicTestCase {
 		 function.checkSocialLinks();
 		 }
 /*-----------------------------------------------------------------------------------------------------*/
-	 @Test(priority=3,groups={"Soclinks"}, description="Проверяет отображение блока соц сетей на  <<Азербайджанская>>")
-	 public void socialOnAzer () throws Exception {
+	 @Test(priority=3,groups={"Soclinks"}, description="Проверяет отображение блока соц сетей на  <<Казахстанская>>")
+	 public void socialOnKazah () throws Exception {
 		 driver.get(kazahUrl);
 		 function.checkSocialLinks();
 }
