@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="content.PlayMusicOnLand">
+      <class name="content.BlokTitles">
         <methods>
-          <include name="PlayMusic"/>
+          <include name="KazahTitles"/>
           <include name="thearDown"/>
           <include name="getWebDriver"/>
         </methods>
-      </class> <!-- content.PlayMusicOnLand -->
+      </class> <!-- content.BlokTitles -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

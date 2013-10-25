@@ -1,111 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="16" passed="16">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="63919" started-at="2013-10-25T09:54:51Z" finished-at="2013-10-25T09:55:55Z">
+  <suite name="Default suite" duration-ms="22801" started-at="2013-10-25T10:57:52Z" finished-at="2013-10-25T10:58:14Z">
     <groups>
-      <group name="Login">
-        <method signature="Login.LogIn()[pri:0, instance:user.Login@38957573]" name="LogIn" class="user.Login"/>
-      </group> <!-- Login -->
-      <group name="Header">
-        <method signature="Headers.KazahHeader()[pri:0, instance:content.Headers@3d04562f]" name="KazahHeader" class="content.Headers"/>
-        <method signature="Headers.MusicHeader()[pri:0, instance:content.Headers@3d04562f]" name="MusicHeader" class="content.Headers"/>
-        <method signature="Headers.NovinkiHeader()[pri:0, instance:content.Headers@3d04562f]" name="NovinkiHeader" class="content.Headers"/>
-        <method signature="Headers.PlaylistHeader()[pri:0, instance:content.Headers@3d04562f]" name="PlaylistHeader" class="content.Headers"/>
-        <method signature="Headers.UploadHeader()[pri:0, instance:content.Headers@3d04562f]" name="UploadHeader" class="content.Headers"/>
-      </group> <!-- Header -->
-      <group name="Soclinks">
-        <method signature="SocialLinks.socialOnAzer()[pri:0, instance:content.SocialLinks@67f79cb1]" name="socialOnAzer" class="content.SocialLinks"/>
-        <method signature="SocialLinks.socialOnMusic()[pri:0, instance:content.SocialLinks@67f79cb1]" name="socialOnMusic" class="content.SocialLinks"/>
-        <method signature="SocialLinks.socialOnNovinki()[pri:0, instance:content.SocialLinks@67f79cb1]" name="socialOnNovinki" class="content.SocialLinks"/>
-        <method signature="SocialLinks.socialOnPlaylist()[pri:0, instance:content.SocialLinks@67f79cb1]" name="socialOnPlaylist" class="content.SocialLinks"/>
-      </group> <!-- Soclinks -->
     </groups>
-    <test name="Test" duration-ms="63919" started-at="2013-10-25T09:54:51Z" finished-at="2013-10-25T09:55:55Z">
-      <class name="content.SocialLinks">
-        <test-method status="PASS" signature="socialOnMusic()[pri:0, instance:content.SocialLinks@67f79cb1]" name="socialOnMusic" duration-ms="3878" started-at="2013-10-25T12:55:17Z" description="Проверяет отображение блока соц сетей на  &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-25T12:55:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- socialOnMusic -->
-        <test-method status="PASS" signature="socialOnNovinki()[pri:0, instance:content.SocialLinks@67f79cb1]" name="socialOnNovinki" duration-ms="2294" started-at="2013-10-25T12:55:28Z" description="Проверяет отображение блока соц сетей на  &lt;&lt;Новинки&gt;&gt;" finished-at="2013-10-25T12:55:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- socialOnNovinki -->
-        <test-method status="PASS" signature="socialOnAzer()[pri:0, instance:content.SocialLinks@67f79cb1]" name="socialOnAzer" duration-ms="2030" started-at="2013-10-25T12:55:32Z" description="Проверяет отображение блока соц сетей на  &lt;&lt;Азербайджанская&gt;&gt;" finished-at="2013-10-25T12:55:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- socialOnAzer -->
-        <test-method status="PASS" signature="socialOnPlaylist()[pri:0, instance:content.SocialLinks@67f79cb1]" name="socialOnPlaylist" duration-ms="1622" started-at="2013-10-25T12:55:37Z" description="Проверяет отображение блока соц сетей на  &lt;&lt;Мой плейлист&gt;&gt;" finished-at="2013-10-25T12:55:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- socialOnPlaylist -->
-      </class> <!-- content.SocialLinks -->
-      <class name="user.Login">
-        <test-method status="PASS" signature="LogIn()[pri:0, instance:user.Login@38957573]" name="LogIn" duration-ms="14013" started-at="2013-10-25T12:54:51Z" description="Тестируем логин" finished-at="2013-10-25T12:55:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LogIn -->
-      </class> <!-- user.Login -->
-      <class name="content.Genres">
-        <test-method status="PASS" signature="MusicGenres()[pri:0, instance:content.Genres@133d9211]" name="MusicGenres" duration-ms="3339" started-at="2013-10-25T12:55:14Z" description="Проверяет отображение жанров на  &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-25T12:55:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MusicGenres -->
-        <test-method status="PASS" signature="KazahGenres()[pri:0, instance:content.Genres@133d9211]" name="KazahGenres" duration-ms="4929" started-at="2013-10-25T12:55:23Z" description="Проверяет отображение жанров на &lt;&lt;Казахстанская&gt;&gt;" finished-at="2013-10-25T12:55:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- KazahGenres -->
-      </class> <!-- content.Genres -->
-      <class name="content.Bloks">
-        <test-method status="PASS" signature="blocksOnMusic()[pri:0, instance:content.Bloks@31505dca]" name="blocksOnMusic" duration-ms="1510" started-at="2013-10-25T12:55:21Z" description="Проверяет отображение блоков на  &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-25T12:55:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- blocksOnMusic -->
-        <test-method status="PASS" signature="BlocksOnNovinki()[pri:0, instance:content.Bloks@31505dca]" name="BlocksOnNovinki" duration-ms="2417" started-at="2013-10-25T12:55:30Z" description="Проверяет оображение блоков на &lt;&lt;Новинки&gt;&gt;" finished-at="2013-10-25T12:55:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BlocksOnNovinki -->
-        <test-method status="PASS" signature="BlocksOnKazah()[pri:0, instance:content.Bloks@31505dca]" name="BlocksOnKazah" duration-ms="2195" started-at="2013-10-25T12:55:34Z" description="Проверяет отображение блоков на  &lt;&lt;Казахстанская&gt;&gt;" finished-at="2013-10-25T12:55:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BlocksOnKazah -->
-      </class> <!-- content.Bloks -->
-      <class name="content.Headers">
-        <test-method status="PASS" signature="getWebDriver()[pri:0, instance:content.Headers@3d04562f]" name="getWebDriver" is-config="true" duration-ms="11" started-at="2013-10-25T12:54:51Z" finished-at="2013-10-25T12:54:51Z">
+    <test name="Default test" duration-ms="22801" started-at="2013-10-25T10:57:52Z" finished-at="2013-10-25T10:58:14Z">
+      <class name="content.BlokTitles">
+        <test-method status="PASS" signature="getWebDriver()[pri:0, instance:content.BlokTitles@4a8c1400]" name="getWebDriver" is-config="true" duration-ms="2547" started-at="2013-10-25T13:57:52Z" finished-at="2013-10-25T13:57:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getWebDriver -->
-        <test-method status="PASS" signature="MusicHeader()[pri:0, instance:content.Headers@3d04562f]" name="MusicHeader" duration-ms="3591" depends-on-groups="Login" started-at="2013-10-25T12:55:38Z" description="Проверяем ссылки на шапке &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-25T12:55:42Z">
+        <test-method status="PASS" signature="MusicTitles()[pri:0, instance:content.BlokTitles@4a8c1400]" name="MusicTitles" duration-ms="10335" started-at="2013-10-25T13:57:54Z" description="Проверяет отображение имени блока на &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-25T13:58:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MusicHeader -->
-        <test-method status="PASS" signature="NovinkiHeader()[pri:0, instance:content.Headers@3d04562f]" name="NovinkiHeader" duration-ms="2768" depends-on-groups="Login" started-at="2013-10-25T12:55:42Z" description="Проверяем ссылки на шапке &lt;&lt;Новинки&gt;&gt;" finished-at="2013-10-25T12:55:45Z">
+        </test-method> <!-- MusicTitles -->
+        <test-method status="PASS" signature="NovinkiTitles()[pri:0, instance:content.BlokTitles@4a8c1400]" name="NovinkiTitles" duration-ms="5080" started-at="2013-10-25T13:58:05Z" description="Проверяет отображение имен блоков на  &lt;&lt;Новинки&gt;&gt;" finished-at="2013-10-25T13:58:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- NovinkiHeader -->
-        <test-method status="PASS" signature="KazahHeader()[pri:0, instance:content.Headers@3d04562f]" name="KazahHeader" duration-ms="3257" depends-on-groups="Login" started-at="2013-10-25T12:55:45Z" description="Проверяем ссылки на шапке &lt;&lt;Казахская&gt;&gt;" finished-at="2013-10-25T12:55:48Z">
+        </test-method> <!-- NovinkiTitles -->
+        <test-method status="PASS" signature="KazahTitles()[pri:0, instance:content.BlokTitles@4a8c1400]" name="KazahTitles" duration-ms="3201" started-at="2013-10-25T13:58:10Z" description="Проверяет отображение имен блоков на  &lt;&lt;Казахстанская&gt;&gt;" finished-at="2013-10-25T13:58:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- KazahHeader -->
-        <test-method status="PASS" signature="PlaylistHeader()[pri:0, instance:content.Headers@3d04562f]" name="PlaylistHeader" duration-ms="2718" depends-on-groups="Login" started-at="2013-10-25T12:55:48Z" description="Проверяем ссылки на шапке &lt;&lt;Мой плейлист&gt;&gt;" finished-at="2013-10-25T12:55:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PlaylistHeader -->
-        <test-method status="PASS" signature="UploadHeader()[pri:0, instance:content.Headers@3d04562f]" name="UploadHeader" duration-ms="2394" depends-on-groups="Login" started-at="2013-10-25T12:55:51Z" description="Проверяем ссылки на шапке &lt;&lt;Загрузить&gt;&gt;" finished-at="2013-10-25T12:55:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UploadHeader -->
-        <test-method status="PASS" signature="thearDown()[pri:0, instance:content.Headers@3d04562f]" name="thearDown" is-config="true" duration-ms="1643" started-at="2013-10-25T12:55:53Z" finished-at="2013-10-25T12:55:55Z">
+        </test-method> <!-- KazahTitles -->
+        <test-method status="PASS" signature="thearDown()[pri:0, instance:content.BlokTitles@4a8c1400]" name="thearDown" is-config="true" duration-ms="1618" started-at="2013-10-25T13:58:13Z" finished-at="2013-10-25T13:58:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- thearDown -->
-      </class> <!-- content.Headers -->
-      <class name="content.PlayMusicOnLand">
-        <test-method status="PASS" signature="PlayMusic()[pri:0, instance:content.PlayMusicOnLand@c487113]" name="PlayMusic" duration-ms="9275" started-at="2013-10-25T12:55:05Z" description="Проверяет играет ли трек на странице скачки" finished-at="2013-10-25T12:55:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PlayMusic -->
-      </class> <!-- content.PlayMusicOnLand -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- content.BlokTitles -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
