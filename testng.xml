@@ -18,6 +18,7 @@
     <class name="content.Bloks"/>
     <class name="content.BlokTitles"/>
     <class name="content.Artists"/>
+    <class name="upload.Upload"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
