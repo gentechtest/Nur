@@ -1,33 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22801" started-at="2013-10-25T10:57:52Z" finished-at="2013-10-25T10:58:14Z">
+  <suite name="Default suite" duration-ms="35920" started-at="2013-10-25T12:43:37Z" finished-at="2013-10-25T12:44:13Z">
     <groups>
+      <group name="Login">
+        <method signature="Login.LogIn()[pri:0, instance:user.Login@b20dae]" name="LogIn" class="user.Login"/>
+      </group> <!-- Login -->
     </groups>
-    <test name="Default test" duration-ms="22801" started-at="2013-10-25T10:57:52Z" finished-at="2013-10-25T10:58:14Z">
-      <class name="content.BlokTitles">
-        <test-method status="PASS" signature="getWebDriver()[pri:0, instance:content.BlokTitles@4a8c1400]" name="getWebDriver" is-config="true" duration-ms="2547" started-at="2013-10-25T13:57:52Z" finished-at="2013-10-25T13:57:54Z">
+    <test name="Default test" duration-ms="35920" started-at="2013-10-25T12:43:37Z" finished-at="2013-10-25T12:44:13Z">
+      <class name="user.Login">
+        <test-method status="PASS" signature="getWebDriver()[pri:0, instance:user.Login@b20dae]" name="getWebDriver" is-config="true" duration-ms="13" started-at="2013-10-25T15:43:37Z" finished-at="2013-10-25T15:43:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getWebDriver -->
-        <test-method status="PASS" signature="MusicTitles()[pri:0, instance:content.BlokTitles@4a8c1400]" name="MusicTitles" duration-ms="10335" started-at="2013-10-25T13:57:54Z" description="Проверяет отображение имени блока на &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-25T13:58:05Z">
+        <test-method status="PASS" signature="LogIn()[pri:0, instance:user.Login@b20dae]" name="LogIn" duration-ms="19973" started-at="2013-10-25T15:43:37Z" description="Тестируем логин" finished-at="2013-10-25T15:43:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MusicTitles -->
-        <test-method status="PASS" signature="NovinkiTitles()[pri:0, instance:content.BlokTitles@4a8c1400]" name="NovinkiTitles" duration-ms="5080" started-at="2013-10-25T13:58:05Z" description="Проверяет отображение имен блоков на  &lt;&lt;Новинки&gt;&gt;" finished-at="2013-10-25T13:58:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NovinkiTitles -->
-        <test-method status="PASS" signature="KazahTitles()[pri:0, instance:content.BlokTitles@4a8c1400]" name="KazahTitles" duration-ms="3201" started-at="2013-10-25T13:58:10Z" description="Проверяет отображение имен блоков на  &lt;&lt;Казахстанская&gt;&gt;" finished-at="2013-10-25T13:58:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- KazahTitles -->
-        <test-method status="PASS" signature="thearDown()[pri:0, instance:content.BlokTitles@4a8c1400]" name="thearDown" is-config="true" duration-ms="1618" started-at="2013-10-25T13:58:13Z" finished-at="2013-10-25T13:58:14Z">
+        </test-method> <!-- LogIn -->
+        <test-method status="PASS" signature="thearDown()[pri:0, instance:user.Login@b20dae]" name="thearDown" is-config="true" duration-ms="1621" started-at="2013-10-25T15:44:12Z" finished-at="2013-10-25T15:44:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- thearDown -->
-      </class> <!-- content.BlokTitles -->
+      </class> <!-- user.Login -->
+      <class name="upload.Upload">
+        <test-method status="PASS" signature="UploadTrack()[pri:0, instance:upload.Upload@2862c542]" name="UploadTrack" duration-ms="14294" depends-on-groups="Login" started-at="2013-10-25T15:43:57Z" finished-at="2013-10-25T15:44:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadTrack -->
+      </class> <!-- upload.Upload -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
