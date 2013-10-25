@@ -16,7 +16,7 @@
     <class name="content.Genres"/>
     <class name="content.SocialLinks"/>
     <class name="content.Bloks"/>
-    <class name="content.BlockTitles"/>
+    <class name="content.BlokTitles"/>
     <class name="content.Artists"/>
     </classes>
   </test> <!-- Test -->
