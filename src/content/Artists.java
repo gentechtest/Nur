@@ -3,7 +3,6 @@ package content;
 import org.openqa.selenium.By;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
-
 import basic.BasicTestCase;
 
 public class Artists extends BasicTestCase {

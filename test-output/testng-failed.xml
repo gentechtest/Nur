@@ -10,11 +10,11 @@
           <include name="getWebDriver"/>
         </methods>
       </class> <!-- user.Login -->
-      <class name="upload.Upload">
+      <class name="pageFactory.Download">
         <methods>
-          <include name="UploadTrack"/>
+          <include name="downloadTrack"/>
         </methods>
-      </class> <!-- upload.Upload -->
+      </class> <!-- pageFactory.Download -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
