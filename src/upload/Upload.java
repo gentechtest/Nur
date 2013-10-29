@@ -22,7 +22,7 @@ public class Upload extends BasicTestCase {
 	driver.get(musicUrl);
 	obj.Upload.click(); //go to upload link on head
 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(@id,'SWFUpload_0')]"))).click();//click on upload button
-	Runtime.getRuntime().exec("resource/upload.exe"); // use script 
+	Runtime.getRuntime().exec("resource/up.exe"); // use script 
 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='file_complete_status']/a"))).click(); // go to play list after download
 	driver.navigate().refresh();
 	assertEquals("Неизвестный исполнитель — test" ,driver.findElement(By.xpath("//*[@class='left']//*[@class='advanced_playlist']/li[1]")).getAttribute("audio_name")); //check track
