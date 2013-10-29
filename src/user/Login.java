@@ -1,7 +1,6 @@
 package user;
 
 import static org.testng.AssertJUnit.assertTrue;
-
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 

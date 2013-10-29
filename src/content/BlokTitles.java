@@ -14,6 +14,7 @@ public class BlokTitles extends BasicTestCase {
 		@Test(priority=1, description="Проверяет отображение имени блока на <<Музыка>>")
 		public void MusicTitles () throws Exception {
 			  driver.get(musicUrl);
+			  assertPage(musicUrl);
 			  	try{
 			  		driver.findElement(By.xpath("//h3[contains(text(),'Топ-исполнители')]")).isDisplayed();
 		  		}
@@ -44,6 +45,7 @@ public class BlokTitles extends BasicTestCase {
 		 @Test(priority=2, description="Проверяет отображение имен блоков на  <<Новинки>>")
 		 public void NovinkiTitles () throws Exception {
 			 driver.get(novinkiUrl);
+			 assertPage(novinkiUrl);
 			 try {
 			 driver.findElement(By.xpath("//h3[contains(text(),'Новые популярные исполнители')]")).isDisplayed();
 			 } catch (NoSuchElementException e) {
@@ -56,6 +58,7 @@ public class BlokTitles extends BasicTestCase {
 		 @Test(priority=3, description="Проверяет отображение имен блоков на  <<Казахстанская>>")
 		 public void KazahTitles () throws Exception {
 			 driver.get(kazahUrl);
+			 assertPage(kazahUrl);
 			 try{
 				 driver.findElement(By.xpath("//h3[contains(text(),'Топ-Исполнители Казахстана')]")).isDisplayed();
 			 }

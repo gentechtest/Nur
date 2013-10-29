@@ -1,4 +1,5 @@
 package basic;
+
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
@@ -11,5 +12,5 @@ public class Log extends TestListenerAdapter {
 	System.out.println(ts.getMethod().getDescription());
 	System.out.println("STARTED: [Class="+ts.getTestClass().getRealClass().getSimpleName()+"] [Method="+ts.getName()+"]");
 	}
-
+	
 }

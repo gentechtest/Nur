@@ -98,7 +98,7 @@ public class Headers extends BasicTestCase{
 		@Test(priority = 3, groups={"Header"}, description="Проверяем ссылки на шапке <<Казахская>>")
 		public void KazahHeader () throws Exception {
 			driver.get(kazahUrl);
-			 assertPage(kazahUrl);
+			assertPage(kazahUrl);
 		    //kazahs music
 			try {
 		    obj.Kazahskaya.click();
