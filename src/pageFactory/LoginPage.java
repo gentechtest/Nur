@@ -28,12 +28,8 @@ public class LoginPage extends MethodsPage{
 	   super(driver);
 	  }
 	  
-	  public void loginAs (UserData user) {
-	  
-	   type(fieldLogin, user.login );
-	   fieldPassword.click();
-	   type(fieldPassword2, user.password);
-	   buttonSubmit.click();
+	  public boolean isLogedIn() {
+	   return isElementPresent(linkLogOut);
 	  }
 	  
 	  public boolean isLogedOut() {
@@ -44,8 +40,12 @@ public class LoginPage extends MethodsPage{
 	    return false;
 	   }
 	  }
-	  public boolean isLogedIn() {
-	   return isElementPresent(linkLogOut);
+	  public void loginAs (UserData user) {
+	  
+	   type(fieldLogin, user.login );
+	   fieldPassword.click();
+	   type(fieldPassword2, user.password);
+	   buttonSubmit.click();
 	  }
 
 }

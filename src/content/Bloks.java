@@ -11,7 +11,39 @@ import basic.BasicTestCase;
 
 public class Bloks extends BasicTestCase {
 
-		@Test(priority=1, description="Проверяет отображение блоков на  <<Музыка>>")
+		/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+		//Check blocks on a page
+		 @Test(priority=3, description="Проверяет отображение блоков на  <<Казахстанская>>")
+		 public void BlocksOnKazah () throws Exception {
+			 driver.get(kazahUrl);
+			 assertPage(kazahUrl);
+			 	try{
+			 		driver.findElement(By.xpath("//*[@class='maincontent']//*[@class='section'][1]")).isDisplayed();//block top 10 tracks of the week
+				}
+			  	 catch (NoSuchElementException e) {
+					    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается блок <<Топ-10 треков за неделю>>");
+				    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается блок <<Топ-10 треков за неделю>>");
+				  		throw new NoSuchElementException ("");
+				  		}
+			 	try{
+			 		driver.findElement(By.xpath("//*[@class='maincontent']//*[@class='section'][2]")).isDisplayed();//block pop genres
+			 	}
+			 		catch (NoSuchElementException e) {
+					    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается блок <<Популярные жанры>>");
+				    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается блок <<Популярные жанры>>");
+				  		throw new NoSuchElementException ("");
+				  		}
+			 	try{
+			 		driver.findElement(By.xpath("//*[@class='aside']//*[@class='section']")).isDisplayed();//block top artists
+			 		}
+			 	catch (NoSuchElementException e) {
+				    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается блок <<Топ-исполнители>>");
+			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается блок <<Топ-исполнители>>");
+			  		throw new NoSuchElementException ("");
+			  		}
+			
+	}
+@Test(priority=1, description="Проверяет отображение блоков на  <<Музыка>>")
 		public void blocksOnMusic () throws Exception {
 			  driver.get(musicUrl);
 			  assertPage(musicUrl);
@@ -71,37 +103,5 @@ public class Bloks extends BasicTestCase {
 				  		throw new NoSuchElementException ("");
 				  		}
 }
-/*-----------------------------------------------------------------------------------------------------------------------------------------*/
-		//Check blocks on a page
-		 @Test(priority=3, description="Проверяет отображение блоков на  <<Казахстанская>>")
-		 public void BlocksOnKazah () throws Exception {
-			 driver.get(kazahUrl);
-			 assertPage(kazahUrl);
-			 	try{
-			 		driver.findElement(By.xpath("//*[@class='maincontent']//*[@class='section'][1]")).isDisplayed();//block top 10 tracks of the week
-				}
-			  	 catch (NoSuchElementException e) {
-					    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается блок <<Топ-10 треков за неделю>>");
-				    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается блок <<Топ-10 треков за неделю>>");
-				  		throw new NoSuchElementException ("");
-				  		}
-			 	try{
-			 		driver.findElement(By.xpath("//*[@class='maincontent']//*[@class='section'][2]")).isDisplayed();//block pop genres
-			 	}
-			 		catch (NoSuchElementException e) {
-					    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается блок <<Популярные жанры>>");
-				    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается блок <<Популярные жанры>>");
-				  		throw new NoSuchElementException ("");
-				  		}
-			 	try{
-			 		driver.findElement(By.xpath("//*[@class='aside']//*[@class='section']")).isDisplayed();//block top artists
-			 		}
-			 	catch (NoSuchElementException e) {
-				    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается блок <<Топ-исполнители>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается блок <<Топ-исполнители>>");
-			  		throw new NoSuchElementException ("");
-			  		}
-			
-	}
 }
 

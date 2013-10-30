@@ -3,25 +3,21 @@
 <suite name="Failed suite [Suite]" parallel="none">
   <listeners>
     <listener class-name="basic.Log"/>
+    <listener class-name="basic.ScreenshotOnFailure"/>
   </listeners>
   <test name="Test(failed)" parallel="none">
     <classes>
-      <class name="user.Login">
+      <class name="content.BlokTitles">
         <methods>
-          <include name="LogIn"/>
           <include name="thearDown"/>
           <include name="getWebDriver"/>
         </methods>
-      </class> <!-- user.Login -->
-      <class name="content.Headers">
+      </class> <!-- content.BlokTitles -->
+      <class name="content.PlayMusicOnLand">
         <methods>
-          <include name="UploadHeader"/>
-          <include name="MusicHeader"/>
-          <include name="NovinkiHeader"/>
-          <include name="PlaylistHeader"/>
-          <include name="KazahHeader"/>
+          <include name="PlayMusic"/>
         </methods>
-      </class> <!-- content.Headers -->
+      </class> <!-- content.PlayMusicOnLand -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

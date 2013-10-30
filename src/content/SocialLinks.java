@@ -9,7 +9,14 @@ import basic.BasicTestCase;
 public class SocialLinks extends BasicTestCase {
 	private SocialLinkPage function = PageFactory.initElements(getWebDriver(), SocialLinkPage.class);
 
-	 @Test(priority=1,groups={"Soclinks"}, description="Проверяет отображение блока соц сетей на  <<Музыка>>")
+	 /*-----------------------------------------------------------------------------------------------------*/
+	 @Test(priority=3,groups={"Soclinks"}, description="Проверяет отображение блока соц сетей на  <<Казахстанская>>")
+	 public void socialOnKazah () throws Exception {
+		 driver.get(kazahUrl);
+		 assertPage(kazahUrl);
+		 function.checkSocialLinks();
+}
+@Test(priority=1,groups={"Soclinks"}, description="Проверяет отображение блока соц сетей на  <<Музыка>>")
 	 public void socialOnMusic () throws Exception {
 		 driver.get(musicUrl);
 		 assertPage(musicUrl);
@@ -22,13 +29,6 @@ public class SocialLinks extends BasicTestCase {
 		 assertPage(novinkiUrl);
 		 function.checkSocialLinks();
 		 }
-/*-----------------------------------------------------------------------------------------------------*/
-	 @Test(priority=3,groups={"Soclinks"}, description="Проверяет отображение блока соц сетей на  <<Казахстанская>>")
-	 public void socialOnKazah () throws Exception {
-		 driver.get(kazahUrl);
-		 assertPage(kazahUrl);
-		 function.checkSocialLinks();
-}
 /*------------------------------------------------------------------------------------------------------*/
 	 @Test(priority=4,groups={"Soclinks"}, description="Проверяет отображение блока соц сетей на  <<Мой плейлист>>")
 	 public void socialOnPlaylist () throws Exception {

@@ -7,14 +7,7 @@ import org.testng.annotations.Test;
 import basic.BasicTestCase;
 
 public class PlayMusicOnLand extends BasicTestCase {
-	 //Play music on a page
-	@Test(priority=1, description="Проверяет играет ли трек на странице скачки")
-	public void PlayMusic () throws Exception {
-	   driver.get(musicUrl);
-	   assertPage(musicUrl);
-	   playMusic();
-}
-	   //Play music test
+	 //Play music test
 	   public void playMusic () throws Exception {
 	   driver.findElement(By.xpath("//*[@class='row']/strong/a")).click();
 	   driver.findElement(By.xpath("//*[@class='mainsection']//*[@class='advanced_playlist']/li/a[1]")).click();
@@ -36,4 +29,11 @@ public class PlayMusicOnLand extends BasicTestCase {
 	   }   
 	   }
 	   }
+	   //Play music on a page
+	@Test(priority=1, description="Проверяет играет ли трек на странице скачки")
+	public void PlayMusic () throws Exception {
+	   driver.get(musicUrl);
+	   assertPage(musicUrl);
+	   playMusic();
+}
 }

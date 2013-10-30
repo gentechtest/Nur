@@ -9,18 +9,13 @@ import org.testng.Reporter;
 
 
 public class SocialLinkPage extends MethodsPage {
-	 public SocialLinkPage(WebDriver driver) {
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
-
-	//Social network
+	 //Social network
 	   @FindBy (xpath = "//*[@class='pluso-wrap']/a[1]") //link "Vkontakte"
 	   public WebElement Vkontakte;
 
-	   @FindBy (xpath = "//*[@class='pluso-wrap']/a[2]") //link "Odnoklasniki"
+	@FindBy (xpath = "//*[@class='pluso-wrap']/a[2]") //link "Odnoklasniki"
 	   public WebElement Odnoklasniki;
-	  
+
 	   @FindBy (xpath = "//*[@class='pluso-wrap']/a[3]") // link "Facebook"
 	   public WebElement Facebook;
 	  
@@ -32,16 +27,21 @@ public class SocialLinkPage extends MethodsPage {
 	  
 	   @FindBy (xpath = "//*[@class='pluso-wrap']/a[6]") // link "Live Journal"
 	   public WebElement LiveJournal;
-	   
+	  
 	   @FindBy (xpath = "//*[@class='pluso-wrap']/a[7]") // link "Tumblr"
 	   public WebElement Tumbler;
-	  
+	   
 	   @FindBy (xpath = "//*[@class='pluso-wrap']/a[8]") // link "Mailru"
 	   public WebElement Mailru;
 	  
 	   @FindBy (xpath = "//*[@class='pluso-wrap']/a[9]") // ajax "Pluso"
 	   public WebElement Pluso;
 	/*-------------------------------------------------------------------------------------------------------*/
+	  
+	   public SocialLinkPage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
 	   
 	/*Check social links is present*/
 	public void checkSocialLinks () throws Exception {
