@@ -23,12 +23,13 @@ public class Upload extends BasicTestCase {
 	
 	
 //Upload track                     
-@Test(priority = 1, groups={"Upload"}, description="Проверяет загрузку треков на сайт")
+@Test(priority = 1, groups={"Upload"}, description="Проверяет загрузку треков на сайт", dependsOnGroups={"Login"})
 	public void UploadTrack () throws Exception {
 	driver.get(musicUrl);
 	assertPage(musicUrl);
 	obj.Upload.click(); //go to upload link on head
 	setClipboard("C:\\test.mp3");
+	Thread.sleep(5000);
 	driver.findElement(By.xpath("//*[contains(@id,'SWFUpload_0')]")).click();//click on upload button
 	keySendToWinForm();
 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='file_complete_status']/a"))).click(); // go to play list after download

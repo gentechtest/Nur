@@ -10,11 +10,6 @@
           <include name="UploadTrack"/>
         </methods>
       </class> <!-- upload.Upload -->
-      <class name="user.Login">
-        <methods>
-          <include name="LogIn"/>
-        </methods>
-      </class> <!-- user.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

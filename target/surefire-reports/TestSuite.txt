@@ -1,15 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 23, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 139.841 sec <<< FAILURE! - in TestSuite
-UploadTrack(upload.Upload)  Time elapsed: 3.414 sec  <<< FAILURE!
-java.io.IOException: Cannot run program "resource/upload.exe": CreateProcess error=2, Íå óäàåòñÿ íàéòè óêàçàííûé ôàéë
-	at java.lang.ProcessImpl.create(Native Method)
-	at java.lang.ProcessImpl.<init>(ProcessImpl.java:376)
-	at java.lang.ProcessImpl.start(ProcessImpl.java:136)
-	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1022)
-	at java.lang.Runtime.exec(Runtime.java:617)
-	at java.lang.Runtime.exec(Runtime.java:450)
-	at java.lang.Runtime.exec(Runtime.java:347)
-	at upload.Upload.UploadTrack(Upload.java:25)
-
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 80.955 sec - in TestSuite
