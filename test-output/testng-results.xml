@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="11578" started-at="2013-10-29T12:33:12Z" finished-at="2013-10-29T12:33:24Z">
+  <suite name="Default suite" duration-ms="25105" started-at="2013-10-30T08:49:20Z" finished-at="2013-10-30T08:49:45Z">
     <groups>
       <group name="Login">
-        <method signature="Login.LogIn()[pri:0, instance:user.Login@46cf209b]" name="LogIn" class="user.Login"/>
+        <method signature="Login.LogIn()[pri:0, instance:user.Login@60505f8]" name="LogIn" class="user.Login"/>
       </group> <!-- Login -->
     </groups>
-    <test name="Test" duration-ms="11578" started-at="2013-10-29T12:33:12Z" finished-at="2013-10-29T12:33:24Z">
+    <test name="Default test" duration-ms="25105" started-at="2013-10-30T08:49:20Z" finished-at="2013-10-30T08:49:45Z">
       <class name="user.Login">
-        <test-method status="PASS" signature="getWebDriver()[pri:0, instance:user.Login@46cf209b]" name="getWebDriver" is-config="true" duration-ms="15" started-at="2013-10-29T14:33:12Z" finished-at="2013-10-29T14:33:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getWebDriver -->
-        <test-method status="PASS" signature="LogIn()[pri:0, instance:user.Login@46cf209b]" name="LogIn" duration-ms="9751" started-at="2013-10-29T14:33:12Z" description="Тестируем логин" finished-at="2013-10-29T14:33:22Z">
+        <test-method status="PASS" signature="LogIn()[pri:0, instance:user.Login@60505f8]" name="LogIn" duration-ms="9262" started-at="2013-10-30T10:49:20Z" description="Тестируем логин" finished-at="2013-10-30T10:49:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogIn -->
-        <test-method status="PASS" signature="thearDown()[pri:0, instance:user.Login@46cf209b]" name="thearDown" is-config="true" duration-ms="1796" started-at="2013-10-29T14:33:22Z" finished-at="2013-10-29T14:33:24Z">
+      </class> <!-- user.Login -->
+      <class name="upload.Upload">
+        <test-method status="PASS" signature="getWebDriver()[pri:0, instance:upload.Upload@25295985]" name="getWebDriver" is-config="true" duration-ms="9" started-at="2013-10-30T10:49:20Z" finished-at="2013-10-30T10:49:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWebDriver -->
+        <test-method status="PASS" signature="UploadTrack()[pri:0, instance:upload.Upload@25295985]" name="UploadTrack" duration-ms="14204" depends-on-groups="Login" started-at="2013-10-30T10:49:29Z" finished-at="2013-10-30T10:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadTrack -->
+        <test-method status="PASS" signature="thearDown()[pri:0, instance:upload.Upload@25295985]" name="thearDown" is-config="true" duration-ms="1616" started-at="2013-10-30T10:49:43Z" finished-at="2013-10-30T10:49:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- thearDown -->
-      </class> <!-- user.Login -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- upload.Upload -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
