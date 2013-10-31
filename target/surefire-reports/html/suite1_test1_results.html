@@ -12,15 +12,13 @@
 <body>
 <h1>Test</h1>
 <p>
-  Test duration: 36,358s
+  Test duration: 77,413s
 </p>
 
 
 
-
-
   <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
         <td colspan="3" class="group">upload.Upload</td>
       </tr>
@@ -30,7 +28,410 @@
                   <span class="description" title="Проверяет загрузку треков на сайт">UploadTrack</span>
       </td>
   <td class="duration">
-    23,744s
+    4,013s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <a href=fail-screenshots/2013-10-31/upload.Upload_UploadTrack_15-48-04.png><img src=fail-screenshots/2013-10-31/upload.Upload_UploadTrack_15-48-04.png height='200' width='200'/></a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.io.IOException: Cannot run program &quot;resource/upload_scrpt.exe&quot;: CreateProcess error=2, Íå óäàåòñÿ íàéòè óêàçàííûé ôàéë</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              java.lang.ProcessBuilder.start(Unknown Source)<br />
+              java.lang.Runtime.exec(Unknown Source)<br />
+              java.lang.Runtime.exec(Unknown Source)<br />
+              java.lang.Runtime.exec(Unknown Source)<br />
+              upload.Upload.UploadTrack(Upload.java:27)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:170)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.io.IOException: CreateProcess error=2, Íå óäàåòñÿ íàéòè óêàçàííûé ôàéë</a><br />
+        <div class="stackTrace" id="exception-1">
+                      java.lang.ProcessImpl.create(Native Method)<br />
+                      java.lang.ProcessImpl.&lt;init&gt;(Unknown Source)<br />
+                      java.lang.ProcessImpl.start(Unknown Source)<br />
+                      java.lang.ProcessBuilder.start(Unknown Source)<br />
+                      java.lang.Runtime.exec(Unknown Source)<br />
+                      java.lang.Runtime.exec(Unknown Source)<br />
+                      java.lang.Runtime.exec(Unknown Source)<br />
+                      upload.Upload.UploadTrack(Upload.java:27)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+                      org.testng.TestRunner.run(TestRunner.java:617)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+                      org.testng.TestNG.run(TestNG.java:1057)<br />
+                      org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:170)<br />
+                      org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)<br />
+                      org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)<br />
+                      org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)<br />
+                      org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)<br />
+                      org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">content.Artists</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяет отображение артистов на <<Казахстанская>>">KazahArtists</span>
+      </td>
+  <td class="duration">
+    1,974s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяет отображение артистов на <<Музыка>>">MusicArtists</span>
+      </td>
+  <td class="duration">
+    2,069s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяет отображение артистов на <<Новинки>>">NovinkiArtists</span>
+      </td>
+  <td class="duration">
+    2,211s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">content.BlokTitles</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяет отображение имен блоков на  <<Казахстанская>>">KazahTitles</span>
+      </td>
+  <td class="duration">
+    1,804s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяет отображение имени блока на <<Музыка>>">MusicTitles</span>
+      </td>
+  <td class="duration">
+    1,744s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяет отображение имен блоков на  <<Новинки>>">NovinkiTitles</span>
+      </td>
+  <td class="duration">
+    1,766s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">content.Bloks</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяет отображение блоков на  <<Казахстанская>>">BlocksOnKazah</span>
+      </td>
+  <td class="duration">
+    1,370s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяет оображение блоков на <<Новинки>>">BlocksOnNovinki</span>
+      </td>
+  <td class="duration">
+    1,579s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяет отображение блоков на  <<Музыка>>">blocksOnMusic</span>
+      </td>
+  <td class="duration">
+    2,044s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">content.Genres</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяет отображение жанров на <<Казахстанская>>">KazahGenres</span>
+      </td>
+  <td class="duration">
+    3,134s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяет отображение жанров на  <<Музыка>>">MusicGenres</span>
+      </td>
+  <td class="duration">
+    3,464s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">content.Headers</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяем ссылки на шапке <<Казахская>>">KazahHeader</span>
+      </td>
+  <td class="duration">
+    5,308s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяем ссылки на шапке <<Музыка>>">MusicHeader</span>
+      </td>
+  <td class="duration">
+    3,336s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяем ссылки на шапке <<Новинки>>">NovinkiHeader</span>
+      </td>
+  <td class="duration">
+    3,527s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяем ссылки на шапке <<Мой плейлист>>">PlaylistHeader</span>
+      </td>
+  <td class="duration">
+    2,488s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяем ссылки на шапке <<Загрузить>>">UploadHeader</span>
+      </td>
+  <td class="duration">
+    2,360s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">content.PlayMusicOnLand</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяет играет ли трек на странице скачки">PlayMusic</span>
+      </td>
+  <td class="duration">
+    13,078s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">content.SocialLinks</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяет отображение блока соц сетей на  <<Казахстанская>>">socialOnKazah</span>
+      </td>
+  <td class="duration">
+    1,876s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяет отображение блока соц сетей на  <<Музыка>>">socialOnMusic</span>
+      </td>
+  <td class="duration">
+    2,006s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяет отображение блока соц сетей на  <<Новинки>>">socialOnNovinki</span>
+      </td>
+  <td class="duration">
+    2,361s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяет отображение блока соц сетей на  <<Мой плейлист>>">socialOnPlaylist</span>
+      </td>
+  <td class="duration">
+    1,934s
   </td>
   <td class="result">
         
@@ -48,7 +449,7 @@
                   <span class="description" title="Тестируем логин">LogIn</span>
       </td>
   <td class="duration">
-    10,880s
+    10,269s
   </td>
   <td class="result">
         

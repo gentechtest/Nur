@@ -1,4 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.631 sec - in TestSuite
+Tests run: 23, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 81.974 sec <<< FAILURE! - in TestSuite
+UploadTrack(upload.Upload)  Time elapsed: 4.03 sec  <<< FAILURE!
+java.io.IOException: Cannot run program "resource/upload_scrpt.exe": CreateProcess error=2, Íå óäàåòñÿ íàéòè óêàçàííûé ôàéë
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at upload.Upload.UploadTrack(Upload.java:27)
+
