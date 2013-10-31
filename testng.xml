@@ -13,7 +13,7 @@
     <classes>
     <class name="user.Login"/>
     <class name="content.PlayMusicOnLand"/>
-   
+    <class name="upload.Upload"/>
     <class name="content.Headers"/>
     <class name="content.Genres"/>
     <class name="content.SocialLinks"/>
