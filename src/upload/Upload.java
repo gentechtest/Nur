@@ -1,11 +1,7 @@
 package upload;
 
 import static org.testng.AssertJUnit.assertEquals;
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.datatransfer.StringSelection;
-import java.awt.event.KeyEvent;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
