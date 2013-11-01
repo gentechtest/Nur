@@ -57,8 +57,7 @@ public class SocialLinkPage extends MethodsPage {
 	Facebook.isDisplayed();
 	}
 	catch (NoSuchElementException e) {
-	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается соцсеть");
-	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается соцсеть");
+	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается соцсеть",true);
 	throw new NoSuchElementException ();
 		  }
 	} 

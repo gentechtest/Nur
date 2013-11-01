@@ -3,18 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="upload.Upload">
+      <class name="upload.Download">
         <methods>
+          <include name="download"/>
           <include name="thearDown"/>
           <include name="getWebDriver"/>
-          <include name="UploadTrack"/>
         </methods>
-      </class> <!-- upload.Upload -->
-      <class name="user.Login">
-        <methods>
-          <include name="LogIn"/>
-        </methods>
-      </class> <!-- user.Login -->
+      </class> <!-- upload.Download -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

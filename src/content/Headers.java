@@ -17,33 +17,28 @@ public class Headers extends BasicTestCase{
 		try {
 	    obj.Kazahskaya.click();
 	    assertPage(kazahUrl);
-	    if (!obj.Kazahskaya.getText().equals("Казахская")){
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Казахская>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Казахская>>");
+	    if (!obj.Kazahskaya.getText().equals("Казахска")){
+		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Казахская>>",true);
 		    }
 		//new music
 	    obj.NewMusic.isDisplayed();
 	    if (!obj.NewMusic.getText().equals("Новинки")){
-		    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
-		    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
+		    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>",true);
 		}
 		//music
 		obj.Music.isDisplayed();
 	    if (!obj.Music.getText().equals("МУЗЫКА")){
-	    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
-	    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
+	    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>",true);
 	    }
 	    //my play list
 	    obj.PlayList.isDisplayed();
 	    if (!obj.PlayList.getText().equals("Мой плейлист")){
-		    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
-		    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
+		    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>",true);
 		    }
 		//upload
 	    obj.Upload.isDisplayed();
 	    if (!obj.Upload.getText().equals("Загрузить")){ 
-		    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
-		    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
+		    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>",true);
 		    }
 	   }catch (AssertionError e){
 		throw new AssertionError ();
@@ -60,32 +55,27 @@ public class Headers extends BasicTestCase{
 			obj.Music.click();
 			assertPage(musicUrl);
 			if (!obj.Music.getText().equals("МУЗЫКА")) {
-				System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
+		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>",true);
 			}
 		    //new music
 		    obj.NewMusic.isDisplayed();
 		    if(!obj.NewMusic.getText().equals("Новинки")){
-		       System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
-			   Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
+			   Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>",true);
 			}
 		    //kazahskaya music
 		    obj.Kazahskaya.isDisplayed();
 		    if(!obj.Kazahskaya.getText().equals("Казахская")){
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Казахская>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Казахская>>");
+		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Казахская>>",true);
 			}
 		    //my play list
 		    obj.PlayList.isDisplayed();
 		    if (!obj.PlayList.getText().equals("Мой плейлист")){
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
+		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>",true);
 		    }
 		    //upload
 		    obj.Upload.isDisplayed();
 		    if (!obj.Upload.getText().equals("Загрузить")){
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
+		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>",true);
 		    }
 			} catch (AssertionError e) {
 			  throw new AssertionError ();
@@ -102,34 +92,29 @@ public class Headers extends BasicTestCase{
 		    obj.NewMusic.click();
 		    assertPage(novinkiUrl);
 		    if(!obj.NewMusic.getText().equals("Новинки")){
-		        System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
-			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>",true);
 		    }
 			//music
 			obj.Music.isDisplayed();
 		    if(!obj.Music.getText().equals("МУЗЫКА")){
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
+		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>",true);
 		    }
 		    
 		    //kazahs music
 			try {
 		    obj.Kazahskaya.isDisplayed();
 		    if (!obj.Kazahskaya.getText().equals("Казахская")){
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Казахская>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Казахская>>");
+			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Казахская>>",true);
 			    }
 		    //my play list
 		    obj.PlayList.isDisplayed();
 		    if (!obj.PlayList.getText().equals("Мой плейлист")){
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
+			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>",true);
 			    }
 			//upload
 		    obj.Upload.isDisplayed();
 		    if (!obj.Upload.getText().equals("Загрузить")) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
+			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>",true);
 			    }
 			} catch (AssertionError e) {
 				throw new AssertionError ();
@@ -146,32 +131,27 @@ public class Headers extends BasicTestCase{
 		    obj.PlayList.click();
 		    assertPage(playlistUrl);
 		    if (!obj.PlayList.getText().equals("Мой плейлист")){ 
-			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
-			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>",true);
 			    }
 		    //kazahs music
 		    obj.Kazahskaya.isDisplayed();
 		    if (!obj.Kazahskaya.getText().equals("Казахская")){
-			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Казахская>>");
-			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Казахская>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Казахская>>",true);
 			    }
 			//new music
 		    obj.NewMusic.isDisplayed();
 		    if (!obj.NewMusic.getText().equals("Новинки")){
-			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
-			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>",true);
 			}
 			//music
 			obj.Music.isDisplayed();
 		    if (!obj.Music.getText().equals("МУЗЫКА")){
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
+		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>",true);
 		    }
 			//upload
 		    obj.Upload.isDisplayed();
 		    if (!obj.Upload.getText().equals("Загрузить")){
-			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
-			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>",true);
 			    }
 			}catch (AssertionError e){
 				throw new AssertionError ();
@@ -189,32 +169,27 @@ public class Headers extends BasicTestCase{
 		    obj.Upload.click();
 		    assertPage(uploadUrl);
 		    if (!obj.Upload.getText().equals("Загрузить")){ 
-			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
-			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>",true);
 			    }
 			//my play list
 		    obj.PlayList.isDisplayed();
 		    if (!obj.PlayList.getText().equals("Мой плейлист")){
-			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
-			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>",true);
 			    }
 		    //kazahs music
 		    obj.Kazahskaya.isDisplayed();
 		    if (!obj.Kazahskaya.getText().equals("Казахская")){
-			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Казахская>>");
-			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Казахская>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Казахская>>",true);
 			    }
 			//new music
 		    obj.NewMusic.isDisplayed();
 		    if (!obj.NewMusic.getText().equals("Новинки")){ 
-			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
-			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>",true);
 			}
 			//music
 			obj.Music.isDisplayed();
 		    if (!obj.Music.getText().equals("МУЗЫКА")){
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
+		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>",true);
 		    }
 		    }catch (AssertionError e){
 		    throw new AssertionError ();

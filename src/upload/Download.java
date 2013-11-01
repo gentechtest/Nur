@@ -1,6 +1,9 @@
 package upload;
 
+import java.awt.Toolkit;
 import java.io.File;
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -21,10 +24,11 @@ public class Download extends BasicTestCase {
 	@Test(description ="Проверяет скачку треков ")
 	public void download () throws Exception {
 		driver.get(musicUrl);
-		String TrackTitle = obj.FirstTrack.getAttribute("audio_name");//gets name of track that will be download
+		System.out.println(Toolkit.getDefaultToolkit().getScreenResolution());
+		/*String TrackTitle = obj.FirstTrack.getAttribute("audio_name");//gets name of track that will be download
 		String a= TrackTitle.replace(" ", "+").replace("—", "-");//reconstruct track name
 		String c= a+"(music.nur.kz)";//adds string
-		File file = new File("C:\\Users\\Voice\\Download\\"+c+".mp3"); // file path
+		File file = new File("C:\\Users\\Voice\\Downloads\\"+c+".mp3"); // file path
 	    //Switch to new window
 		final Set<String> oldWindowsSet = driver.getWindowHandles();
         
@@ -63,7 +67,6 @@ public class Download extends BasicTestCase {
 	    	Reporter.log("Трек не нейден");
 	    	throw new NullPointerException(); // check if file not existing print error
 	    }
-	    	else file.delete(); // if exist delete file
-	    
-}
+	    	else file.delete(); // if exist delete file    */
+	}
 }

@@ -14,8 +14,7 @@ public class Artists extends BasicTestCase {
 	    driver.findElement(By.xpath("//*[@class='ordered-list']//li["+i+"]/h4/a")).isDisplayed();
 	     }
 	    if (expected_numb_artists != real_numb_artists) {
-	    	 System.out.println("На странице "+driver.getCurrentUrl()+" неотображаются артисты");
-		     Reporter.log("На странице "+driver.getCurrentUrl()+" неотображаются артисты");
+		     Reporter.log("На странице "+driver.getCurrentUrl()+" неотображаются артисты", true);
 		     throw new NullPointerException ();
 	    }
 	}

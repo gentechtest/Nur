@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="75.726" tests="23" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="103.234" tests="23" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre7\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Nur\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3038309949998591763.tmp"/>
+    <property name="classworlds.conf" value="C:\Nur\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7586393282858409637.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
     <property name="java.library.path" value="C:\Program Files\Java\jre7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Voice\AppData\Local\Google\Chrome\Application;C:\Windows\System32;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Maven\bin;C:\Program Files (x86)\Git\cmd;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -62,42 +62,27 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="LogIn" classname="user.Login" time="10.265"/>
-  <testcase name="PlayMusic" classname="content.PlayMusicOnLand" time="13.078"/>
-  <testcase name="MusicGenres" classname="content.Genres" time="3.459"/>
-  <testcase name="socialOnMusic" classname="content.SocialLinks" time="2.006"/>
-  <testcase name="MusicArtists" classname="content.Artists" time="2.069"/>
-  <testcase name="blocksOnMusic" classname="content.Bloks" time="2.044"/>
-  <testcase name="MusicTitles" classname="content.BlokTitles" time="1.744"/>
-  <testcase name="KazahGenres" classname="content.Genres" time="3.135"/>
-  <testcase name="socialOnNovinki" classname="content.SocialLinks" time="2.362"/>
-  <testcase name="NovinkiArtists" classname="content.Artists" time="2.211"/>
-  <testcase name="BlocksOnNovinki" classname="content.Bloks" time="1.579"/>
-  <testcase name="NovinkiTitles" classname="content.BlokTitles" time="1.766"/>
-  <testcase name="socialOnKazah" classname="content.SocialLinks" time="1.875"/>
-  <testcase name="KazahArtists" classname="content.Artists" time="1.974"/>
-  <testcase name="BlocksOnKazah" classname="content.Bloks" time="1.37"/>
-  <testcase name="KazahTitles" classname="content.BlokTitles" time="1.804"/>
-  <testcase name="socialOnPlaylist" classname="content.SocialLinks" time="1.934"/>
-  <testcase name="UploadTrack" classname="upload.Upload" time="4.03">
-    <failure message="Cannot run program &quot;resource/upload_scrpt.exe&quot;: CreateProcess error=2, Íå óäàåòñÿ íàéòè óêàçàííûé ôàéë" type="java.io.IOException"><![CDATA[java.io.IOException: Cannot run program "resource/upload_scrpt.exe": CreateProcess error=2, Íå óäàåòñÿ íàéòè óêàçàííûé ôàéë
-	at java.lang.ProcessImpl.create(Native Method)
-	at java.lang.ProcessImpl.<init>(Unknown Source)
-	at java.lang.ProcessImpl.start(Unknown Source)
-	at java.lang.ProcessBuilder.start(Unknown Source)
-	at java.lang.Runtime.exec(Unknown Source)
-	at java.lang.Runtime.exec(Unknown Source)
-	at java.lang.Runtime.exec(Unknown Source)
-	at upload.Upload.UploadTrack(Upload.java:27)
-]]></failure>
-    <system-out>--------------------------------------------------
-Проверяет загрузку треков на сайт
-STARTED: [Class=Upload] [Method=UploadTrack]
-</system-out>
-  </testcase>
-  <testcase name="MusicHeader" classname="content.Headers" time="3.336"/>
-  <testcase name="NovinkiHeader" classname="content.Headers" time="3.529"/>
-  <testcase name="KazahHeader" classname="content.Headers" time="5.308"/>
-  <testcase name="PlaylistHeader" classname="content.Headers" time="2.488"/>
-  <testcase name="UploadHeader" classname="content.Headers" time="2.36"/>
+  <testcase name="LogIn" classname="user.Login" time="16.89"/>
+  <testcase name="PlayMusic" classname="content.PlayMusicOnLand" time="8.65"/>
+  <testcase name="MusicGenres" classname="content.Genres" time="3.757"/>
+  <testcase name="socialOnMusic" classname="content.SocialLinks" time="4.971"/>
+  <testcase name="MusicArtists" classname="content.Artists" time="4.607"/>
+  <testcase name="blocksOnMusic" classname="content.Bloks" time="1.677"/>
+  <testcase name="MusicTitles" classname="content.BlokTitles" time="1.913"/>
+  <testcase name="KazahGenres" classname="content.Genres" time="3.124"/>
+  <testcase name="socialOnNovinki" classname="content.SocialLinks" time="2.505"/>
+  <testcase name="NovinkiArtists" classname="content.Artists" time="1.889"/>
+  <testcase name="BlocksOnNovinki" classname="content.Bloks" time="1.891"/>
+  <testcase name="NovinkiTitles" classname="content.BlokTitles" time="4.182"/>
+  <testcase name="socialOnKazah" classname="content.SocialLinks" time="4.311"/>
+  <testcase name="KazahArtists" classname="content.Artists" time="4.563"/>
+  <testcase name="BlocksOnKazah" classname="content.Bloks" time="1.454"/>
+  <testcase name="KazahTitles" classname="content.BlokTitles" time="1.308"/>
+  <testcase name="socialOnPlaylist" classname="content.SocialLinks" time="1.385"/>
+  <testcase name="UploadTrack" classname="upload.Upload" time="11.876"/>
+  <testcase name="MusicHeader" classname="content.Headers" time="5.467"/>
+  <testcase name="NovinkiHeader" classname="content.Headers" time="3.329"/>
+  <testcase name="KazahHeader" classname="content.Headers" time="3.487"/>
+  <testcase name="PlaylistHeader" classname="content.Headers" time="5.04"/>
+  <testcase name="UploadHeader" classname="content.Headers" time="4.958"/>
 </testsuite>
