@@ -9,7 +9,7 @@ import basic.BasicTestCase;
 
 public class Headers extends BasicTestCase{
 	private ContentPage obj = PageFactory.initElements(getWebDriver(), ContentPage.class);
-	@Test(priority = 3, groups={"Header"}, description="Проверяем ссылки на шапке <<Казахская>>")
+	@Test(priority = 3, groups={"Header"}, description="Проверяем ссылки на шапке <<Казахская>>",dependsOnGroups={"Login"})
 	public void KazahHeader () throws Exception {
 		driver.get(kazahUrl);
 		assertPage(kazahUrl);
@@ -17,7 +17,7 @@ public class Headers extends BasicTestCase{
 		try {
 	    obj.Kazahskaya.click();
 	    assertPage(kazahUrl);
-	    if (!obj.Kazahskaya.getText().equals("Казахска")){
+	    if (!obj.Kazahskaya.getText().equals("Казахская")){
 		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Казахская>>",true);
 		    }
 		//new music
