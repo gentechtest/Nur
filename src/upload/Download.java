@@ -2,6 +2,7 @@ package upload;
 
 import java.awt.Toolkit;
 import java.io.File;
+import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -15,21 +16,31 @@ import basic.BasicTestCase;
 
 public class Download extends BasicTestCase {
 	
+	String voicePC = "C:\\Users\\Voice\\Downloads\\"; //path to track on Voice PC
+	String statsPC = "C:\\Users\\stats\\Downloads\\"; //path to track on Stats PC
+	String filePath ; // if result
+	
 	@Test(description ="Проверяет скачку треков ")
 	public void download () throws Exception {
 		WebDriverWait wait = new WebDriverWait(driver, 180);
 		driver.get(musicUrl);
-		driver.findElement(By.xpath("//*[@class='addthis control download download-track-counter']")).click();//download track
+		
+		//click to download btn
+		driver.findElement(By.xpath("//*[@class='addthis control download download-track-counter']")).click(); //click to download btn
 		
 		//Check PC
-		System.out.println(Toolkit.getDefaultToolkit().getScreenSize()); 
-		
+		double width =  Toolkit.getDefaultToolkit().getScreenSize().getWidth(); 
+			if (width == 1366.0) {
+			  filePath = voicePC;
+			} else filePath = statsPC;
+			
 		//Switch to new window opened
 		for(String winHandle : driver.getWindowHandles()){
 		    driver.switchTo().window(winHandle);
 		}
+		// click on download link
 	      try {  
-	     driver.findElement(By.xpath("//*[@class='one-track-block']/a[1]")).click(); // click on download link
+	     driver.findElement(By.xpath("//*[@class='one-track-block']/a[1]")).click(); 
 	      }
 	      catch (NoSuchElementException e) {
 	    	  Reporter.log("На странице "+driver.getCurrentUrl()+ " неотображается ссылка <<Скачать песню>>",true);
@@ -37,20 +48,25 @@ public class Download extends BasicTestCase {
 	      Thread.sleep(2000);
 	      driver.get("chrome://downloads/");
 	      String stats= driver.findElement(By.xpath("//*[@class='status']")).getText();
-	      System.out.println(stats);
-	      try {
+	      Reporter.log("Старт "+stats,true);
+	      
+	     
+	      //wait until track will be downloaded or 3 min
+	      try{
 	      wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class='controls']/a[1]")));
+	      Reporter.log("Финиш "+stats,true);
 	      }
 	      catch (TimeoutException e) {
 	    	  Reporter.log("Трек не скачался",true);
 	    	  throw new NullPointerException ();
 	      }
+	      // getting name of downloaded track
 	      String fileName = driver.findElement(By.xpath("//*[@class='title-area']/a")).getText();
-	      File file = new File("C:\\Users\\Voice\\Downloads\\"+fileName); // file path
-	      System.out.println(file);
+	      // file path
+	      File file = new File(filePath+fileName); 
+          //
 	      if  (!file.exists()) {
-		    	System.out.println("Трек не найден");
-		    	Reporter.log("Трек не нейден");
+		    	Reporter.log("Файл не существует",true);
 		    	throw new NullPointerException(); // check if file not existing print error
 		    }    // if exist delete file   
 		    	else file.delete();
@@ -60,24 +76,50 @@ public class Download extends BasicTestCase {
 	 
 	
 	}
-	public void  DownloadSpeed () {  
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	public void  DownloadSpeed (String property)  {  
 		
-		 String starts= driver.findElement(By.xpath("//*[@class='status']")).getText();
-	      if(starts.contains("–")) {
-	    	  	
-	    	  int end = starts.indexOf("–");
+	      if(property.contains("–")) {
+	    	  int end = property.indexOf("–");
 		      int start = 0;
 		      char buf[] = new char[end - start];
-		      starts.getChars(start, end, buf, 0);
-		      System.out.println(buf);
+		      property.getChars(start, end, buf, 1);
+		      System.out.println("Скорость загрузки трека " +buf.toString());
 	      }
-	      else if (starts.contains("-")) {
+	      else if (property.contains("-")) {
 	    	  
-	    	  int end = starts.indexOf("–");
+	    	  int end = property.indexOf("–");
 		      int start = 0;
 		      char buf[] = new char[end - start];
-		      starts.getChars(start, end, buf, 0);
-		      System.out.println(buf);
+		      property.getChars(start, end, buf, 0);
+		      System.out.println("Скорость загрузки трека "+buf.toString());
 	      }
 	
 	}
@@ -90,7 +132,7 @@ public class Download extends BasicTestCase {
 		      int end = stats.lastIndexOf("из");
 		      char buf[] = new char[end - start];
 		      stats.getChars(start, end, buf, 0);
-		      System.out.println(buf);
+		      System.out.println("Загружено "+buf);
 	      }
 	      else if (stats.contains("-")) {
 	    	  
@@ -98,7 +140,7 @@ public class Download extends BasicTestCase {
 		      int end = stats.lastIndexOf("из");
 		      char buf[] = new char[end - start];
 		      stats.getChars(start, end, buf, 0);
-		      System.out.println(buf);
+		      System.out.println("Загружено "+buf);
 	      }
 	     }
 	      public void FileSize() {
@@ -109,7 +151,7 @@ public class Download extends BasicTestCase {
 		      int end = stats.lastIndexOf("МБ")+2;
 		      char buf[] = new char[end - start];
 		      stats.getChars(start, end, buf, 0);
-		      System.out.println(buf);
+		      System.out.println("Размер трека "+buf);
 	      }
 	      else if (stats.contains("-")) {
 	    	  
@@ -117,8 +159,8 @@ public class Download extends BasicTestCase {
 		      int end = stats.lastIndexOf("МБ")+2;
 		      char buf[] = new char[end - start];
 		      stats.getChars(start, end, buf, 0);
-		      System.out.println(buf);
+		      System.out.println("Размер трека "+buf);
 	      }
-	      }
+	      }*/
 	    
 }
