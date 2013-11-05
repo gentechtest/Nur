@@ -47,14 +47,14 @@ public class Download extends BasicTestCase {
 	      }
 	      Thread.sleep(2000);
 	      driver.get("chrome://downloads/");
-	      String stats= driver.findElement(By.xpath("//*[@class='status']")).getText();
-	      Reporter.log("Старт "+stats,true);
+	      String start= driver.findElement(By.xpath("//*[@class='status']")).getText();
+	      Reporter.log("Старт "+start,true);
 	      
 	     
 	      //wait until track will be downloaded or 3 min
 	      try{
 	      wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class='controls']/a[1]")));
-	      Reporter.log("Финиш "+stats,true);
+	      String finish = driver.findElement(By.xpath("//*[@class='status']")).getText();
 	      }
 	      catch (TimeoutException e) {
 	    	  Reporter.log("Трек не скачался",true);
