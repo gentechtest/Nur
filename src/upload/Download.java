@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+
 import basic.BasicTestCase;
 
 public class Download extends BasicTestCase {
@@ -48,16 +49,13 @@ public class Download extends BasicTestCase {
 	    	Thread.sleep(2000);
 	    	driver.get("chrome://downloads/");
 	    	
-	    	while(!driver.findElement(By.xpath("//*[@class='status']")).getText().equals("")) {
-	    		int i =+1;
+	    	/*while(!driver.findElement(By.xpath("//*[@class='status']")).getText().equals("")) {
+	    		Runtime.getRuntime().exec("cmd /C cls");
 	    		String status = driver.findElement(By.xpath("//*[@class='status']")).getText();
-	    			if (!driver.findElement(By.xpath("//*[@class='status']")).getText().equals(status)){
-	    				Reporter.log(status,true);
-	    			}
-	    			if (i>=180) {
-	    				break;
-	    			}
-	    	}
+	    			if (!driver.findElement(By.xpath("//*[@class='status']")).getText().equals(status))
+	    				Reporter.log(status,true);	    
+	    	}*/
+	      //wait until track will be downloaded or 3 min
 	      try{
 	        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class='controls']/a[1]"))); 
 	      }
@@ -65,7 +63,6 @@ public class Download extends BasicTestCase {
 	    	  Reporter.log("Трек не скачался",true);
 	    	  throw new NullPointerException ();
 	      }
-
 	      // getting name of downloaded track
 	      String fileName = driver.findElement(By.xpath("//*[@class='title-area']/a")).getText();
 	      // file path
