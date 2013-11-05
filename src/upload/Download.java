@@ -22,7 +22,7 @@ public class Download extends BasicTestCase {
 		driver.findElement(By.xpath("//*[@class='addthis control download download-track-counter']")).click();//download track
 		
 		//Check PC
-		System.out.println(Toolkit.getDefaultToolkit().getScreenResolution()); 
+		System.out.println(Toolkit.getDefaultToolkit().getScreenSize()); 
 		
 		//Switch to new window opened
 		for(String winHandle : driver.getWindowHandles()){
