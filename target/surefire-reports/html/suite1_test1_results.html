@@ -12,11 +12,86 @@
 <body>
 <h1>Test</h1>
 <p>
-  Test duration: 104,933s
+  Test duration: 284,900s
 </p>
 
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">upload.Download</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Проверяет скачку треков ">download</span>
+      </td>
+  <td class="duration">
+    48,227s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <a href=fail-screenshots/2013-11-06/upload.Download_download_00-41-40.png><img src=fail-screenshots/2013-11-06/upload.Download_download_00-41-40.png height='200' width='200'/></a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIIOService.newURI]<br/>
+Command duration or timeout: 10.14 seconds<br/>
+Build info: version: &apos;2.35.0&apos;, revision: &apos;8df0c6bedf70ff9f22c647788f9fe9c8d22210e2&apos;, time: &apos;2013-08-17 12:46:41&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;<br/>
+Session ID: 180c8fdf-220a-43c4-9d39-54d2eb796bb2<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:526)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)<br />
+              upload.Download.download(Download.java:50)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:170)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIIOService.newURI]<br/>
+Build info: version: &apos;2.35.0&apos;, revision: &apos;8df0c6bedf70ff9f22c647788f9fe9c8d22210e2&apos;, time: &apos;2013-08-17 12:46:41&apos;<br/>
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-1">
+                  </div>
+          </div>
+      </td>
+</tr>
+      </table>
 
 
   <table class="resultsTable">
@@ -30,7 +105,7 @@
                   <span class="description" title="Проверяет отображение артистов на <<Казахстанская>>">KazahArtists</span>
       </td>
   <td class="duration">
-    4,562s
+    8,066s
   </td>
   <td class="result">
         
@@ -44,7 +119,7 @@
                   <span class="description" title="Проверяет отображение артистов на <<Музыка>>">MusicArtists</span>
       </td>
   <td class="duration">
-    4,607s
+    8,680s
   </td>
   <td class="result">
         
@@ -58,7 +133,7 @@
                   <span class="description" title="Проверяет отображение артистов на <<Новинки>>">NovinkiArtists</span>
       </td>
   <td class="duration">
-    1,890s
+    5,116s
   </td>
   <td class="result">
         
@@ -76,7 +151,7 @@
                   <span class="description" title="Проверяет отображение имен блоков на  <<Казахстанская>>">KazahTitles</span>
       </td>
   <td class="duration">
-    1,309s
+    6,908s
   </td>
   <td class="result">
         
@@ -90,7 +165,7 @@
                   <span class="description" title="Проверяет отображение имени блока на <<Музыка>>">MusicTitles</span>
       </td>
   <td class="duration">
-    1,912s
+    7,257s
   </td>
   <td class="result">
         
@@ -104,7 +179,7 @@
                   <span class="description" title="Проверяет отображение имен блоков на  <<Новинки>>">NovinkiTitles</span>
       </td>
   <td class="duration">
-    4,181s
+    34,573s
   </td>
   <td class="result">
         
@@ -122,7 +197,7 @@
                   <span class="description" title="Проверяет отображение блоков на  <<Казахстанская>>">BlocksOnKazah</span>
       </td>
   <td class="duration">
-    1,454s
+    9,557s
   </td>
   <td class="result">
         
@@ -136,7 +211,7 @@
                   <span class="description" title="Проверяет оображение блоков на <<Новинки>>">BlocksOnNovinki</span>
       </td>
   <td class="duration">
-    1,891s
+    4,787s
   </td>
   <td class="result">
         
@@ -150,7 +225,7 @@
                   <span class="description" title="Проверяет отображение блоков на  <<Музыка>>">blocksOnMusic</span>
       </td>
   <td class="duration">
-    1,677s
+    5,473s
   </td>
   <td class="result">
         
@@ -168,7 +243,7 @@
                   <span class="description" title="Проверяет отображение жанров на <<Казахстанская>>">KazahGenres</span>
       </td>
   <td class="duration">
-    3,127s
+    7,657s
   </td>
   <td class="result">
         
@@ -182,7 +257,7 @@
                   <span class="description" title="Проверяет отображение жанров на  <<Музыка>>">MusicGenres</span>
       </td>
   <td class="duration">
-    3,757s
+    12,809s
   </td>
   <td class="result">
         
@@ -200,15 +275,12 @@
                   <span class="description" title="Проверяем ссылки на шапке <<Казахская>>">KazahHeader</span>
       </td>
   <td class="duration">
-    3,487s
+    11,029s
   </td>
   <td class="result">
         
     
-            <div class="testOutput">
-                        На странице http://music.nur.kz/audio_kz неотображается линк <<Казахская>>
-                  </div>
-    
+        
 
       </td>
 </tr>
@@ -217,7 +289,7 @@
                   <span class="description" title="Проверяем ссылки на шапке <<Музыка>>">MusicHeader</span>
       </td>
   <td class="duration">
-    5,461s
+    11,048s
   </td>
   <td class="result">
         
@@ -231,7 +303,7 @@
                   <span class="description" title="Проверяем ссылки на шапке <<Новинки>>">NovinkiHeader</span>
       </td>
   <td class="duration">
-    3,334s
+    13,585s
   </td>
   <td class="result">
         
@@ -245,7 +317,7 @@
                   <span class="description" title="Проверяем ссылки на шапке <<Мой плейлист>>">PlaylistHeader</span>
       </td>
   <td class="duration">
-    5,039s
+    10,362s
   </td>
   <td class="result">
         
@@ -259,7 +331,7 @@
                   <span class="description" title="Проверяем ссылки на шапке <<Загрузить>>">UploadHeader</span>
       </td>
   <td class="duration">
-    4,959s
+    9,323s
   </td>
   <td class="result">
         
@@ -277,7 +349,7 @@
                   <span class="description" title="Проверяет играет ли трек на странице скачки">PlayMusic</span>
       </td>
   <td class="duration">
-    8,656s
+    21,508s
   </td>
   <td class="result">
         
@@ -295,7 +367,7 @@
                   <span class="description" title="Проверяет отображение блока соц сетей на  <<Казахстанская>>">socialOnKazah</span>
       </td>
   <td class="duration">
-    4,311s
+    14,482s
   </td>
   <td class="result">
         
@@ -309,7 +381,7 @@
                   <span class="description" title="Проверяет отображение блока соц сетей на  <<Музыка>>">socialOnMusic</span>
       </td>
   <td class="duration">
-    4,971s
+    5,899s
   </td>
   <td class="result">
         
@@ -323,7 +395,7 @@
                   <span class="description" title="Проверяет отображение блока соц сетей на  <<Новинки>>">socialOnNovinki</span>
       </td>
   <td class="duration">
-    2,505s
+    5,550s
   </td>
   <td class="result">
         
@@ -337,25 +409,7 @@
                   <span class="description" title="Проверяет отображение блока соц сетей на  <<Мой плейлист>>">socialOnPlaylist</span>
       </td>
   <td class="duration">
-    1,385s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">upload.Upload</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  <span class="description" title="Проверяет загрузку треков на сайт">UploadTrack</span>
-      </td>
-  <td class="duration">
-    11,877s
+    4,460s
   </td>
   <td class="result">
         
@@ -373,7 +427,7 @@
                   <span class="description" title="Тестируем логин">LogIn</span>
       </td>
   <td class="duration">
-    16,892s
+    18,103s
   </td>
   <td class="result">
         

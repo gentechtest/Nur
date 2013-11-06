@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>22/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 31 16:43:29 EET 2013</td>
+<td>Started on:</td><td>Wed Nov 06 00:32:02 EET 2013</td>
 </tr>
-<tr><td>Total time:</td><td>43 seconds (43419 ms)</td>
+<tr><td>Total time:</td><td>240 seconds (240657 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,87 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='upload.Download.download()'><b>download</b><br>Test class: upload.Download<br>Test method: Проверяет скачку треков <br/>
+<a href="#Output-1775621922" onClick='toggleBox("Output-1775621922", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1775621922" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1775621922">
+<a href=fail-screenshots/2013-11-06/upload.Download_download_00-32-50.png><img src=fail-screenshots/2013-11-06/upload.Download_download_00-32-50.png height='200' width='200'/></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIIOService.newURI]
+Command duration or timeout: 10.06 seconds
+Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
+Session ID: 5261466e-3c1e-407e-8603-826994d77785
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at upload.Download.download(Download.java:50)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIIOService.newURI]
+Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
+Driver info: driver.version: unknown
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1775621922", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1775621922'><pre>org.openqa.selenium.WebDriverException: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIIOService.newURI]
+Command duration or timeout: 10.06 seconds
+Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
+Session ID: 5261466e-3c1e-407e-8603-826994d77785
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at upload.Download.download(Download.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIIOService.newURI]
+Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
+Driver info: driver.version: unknown
+</pre></div></td>
+<td>46</td>
+<td>upload.Download@6561761f</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,42 +156,115 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='content.Headers.KazahHeader()'><b>KazahHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Казахская>><br/>
-<a href="#Output-1883962820" onClick='toggleBox("Output-1883962820", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1883962820" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1883962820">
-На странице http://music.nur.kz/audio_kz неотображается линк <<Казахская>>(353, 215)<br/>
-</div>
-</td>
+<td title='content.Bloks.BlocksOnKazah()'><b>BlocksOnKazah</b><br>Test class: content.Bloks<br>Test method: Проверяет отображение блоков на  <<Казахстанская>></td>
+<td></td>
+<td>5</td>
+<td>content.Bloks@31bfe7</td></tr>
+<tr>
+<td title='content.Bloks.BlocksOnNovinki()'><b>BlocksOnNovinki</b><br>Test class: content.Bloks<br>Test method: Проверяет оображение блоков на <<Новинки>></td>
+<td></td>
+<td>5</td>
+<td>content.Bloks@31bfe7</td></tr>
+<tr>
+<td title='content.Artists.KazahArtists()'><b>KazahArtists</b><br>Test class: content.Artists<br>Test method: Проверяет отображение артистов на <<Казахстанская>></td>
+<td></td>
+<td>6</td>
+<td>content.Artists@35394970</td></tr>
+<tr>
+<td title='content.Genres.KazahGenres()'><b>KazahGenres</b><br>Test class: content.Genres<br>Test method: Проверяет отображение жанров на <<Казахстанская>></td>
 <td></td>
 <td>7</td>
-<td>content.Headers@1c4d98da</td></tr>
+<td>content.Genres@20d107d6</td></tr>
+<tr>
+<td title='content.Headers.KazahHeader()'><b>KazahHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Казахская>></td>
+<td></td>
+<td>7</td>
+<td>content.Headers@4404735c</td></tr>
+<tr>
+<td title='content.BlokTitles.KazahTitles()'><b>KazahTitles</b><br>Test class: content.BlokTitles<br>Test method: Проверяет отображение имен блоков на  <<Казахстанская>></td>
+<td></td>
+<td>6</td>
+<td>content.BlokTitles@2268109</td></tr>
 <tr>
 <td title='user.Login.LogIn()'><b>LogIn</b><br>Test class: user.Login<br>Test method: Тестируем логин</td>
 <td></td>
-<td>12</td>
-<td>user.Login@361d1bdc</td></tr>
+<td>25</td>
+<td>user.Login@422dd6ca</td></tr>
+<tr>
+<td title='content.Artists.MusicArtists()'><b>MusicArtists</b><br>Test class: content.Artists<br>Test method: Проверяет отображение артистов на <<Музыка>></td>
+<td></td>
+<td>14</td>
+<td>content.Artists@35394970</td></tr>
+<tr>
+<td title='content.Genres.MusicGenres()'><b>MusicGenres</b><br>Test class: content.Genres<br>Test method: Проверяет отображение жанров на  <<Музыка>></td>
+<td></td>
+<td>6</td>
+<td>content.Genres@20d107d6</td></tr>
 <tr>
 <td title='content.Headers.MusicHeader()'><b>MusicHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Музыка>></td>
 <td></td>
+<td>8</td>
+<td>content.Headers@4404735c</td></tr>
+<tr>
+<td title='content.BlokTitles.MusicTitles()'><b>MusicTitles</b><br>Test class: content.BlokTitles<br>Test method: Проверяет отображение имени блока на <<Музыка>></td>
+<td></td>
 <td>4</td>
-<td>content.Headers@1c4d98da</td></tr>
+<td>content.BlokTitles@2268109</td></tr>
+<tr>
+<td title='content.Artists.NovinkiArtists()'><b>NovinkiArtists</b><br>Test class: content.Artists<br>Test method: Проверяет отображение артистов на <<Новинки>></td>
+<td></td>
+<td>5</td>
+<td>content.Artists@35394970</td></tr>
 <tr>
 <td title='content.Headers.NovinkiHeader()'><b>NovinkiHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Новинки>></td>
 <td></td>
-<td>9</td>
-<td>content.Headers@1c4d98da</td></tr>
+<td>8</td>
+<td>content.Headers@4404735c</td></tr>
+<tr>
+<td title='content.BlokTitles.NovinkiTitles()'><b>NovinkiTitles</b><br>Test class: content.BlokTitles<br>Test method: Проверяет отображение имен блоков на  <<Новинки>></td>
+<td></td>
+<td>5</td>
+<td>content.BlokTitles@2268109</td></tr>
+<tr>
+<td title='content.PlayMusicOnLand.PlayMusic()'><b>PlayMusic</b><br>Test class: content.PlayMusicOnLand<br>Test method: Проверяет играет ли трек на странице скачки</td>
+<td></td>
+<td>22</td>
+<td>content.PlayMusicOnLand@4f7089b7</td></tr>
 <tr>
 <td title='content.Headers.PlaylistHeader()'><b>PlaylistHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Мой плейлист>></td>
 <td></td>
-<td>4</td>
-<td>content.Headers@1c4d98da</td></tr>
+<td>16</td>
+<td>content.Headers@4404735c</td></tr>
 <tr>
 <td title='content.Headers.UploadHeader()'><b>UploadHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Загрузить>></td>
 <td></td>
+<td>7</td>
+<td>content.Headers@4404735c</td></tr>
+<tr>
+<td title='content.Bloks.blocksOnMusic()'><b>blocksOnMusic</b><br>Test class: content.Bloks<br>Test method: Проверяет отображение блоков на  <<Музыка>></td>
+<td></td>
 <td>3</td>
-<td>content.Headers@1c4d98da</td></tr>
+<td>content.Bloks@31bfe7</td></tr>
+<tr>
+<td title='content.SocialLinks.socialOnKazah()'><b>socialOnKazah</b><br>Test class: content.SocialLinks<br>Test method: Проверяет отображение блока соц сетей на  <<Казахстанская>></td>
+<td></td>
+<td>8</td>
+<td>content.SocialLinks@61922138</td></tr>
+<tr>
+<td title='content.SocialLinks.socialOnMusic()'><b>socialOnMusic</b><br>Test class: content.SocialLinks<br>Test method: Проверяет отображение блока соц сетей на  <<Музыка>></td>
+<td></td>
+<td>7</td>
+<td>content.SocialLinks@61922138</td></tr>
+<tr>
+<td title='content.SocialLinks.socialOnNovinki()'><b>socialOnNovinki</b><br>Test class: content.SocialLinks<br>Test method: Проверяет отображение блока соц сетей на  <<Новинки>></td>
+<td></td>
+<td>5</td>
+<td>content.SocialLinks@61922138</td></tr>
+<tr>
+<td title='content.SocialLinks.socialOnPlaylist()'><b>socialOnPlaylist</b><br>Test class: content.SocialLinks<br>Test method: Проверяет отображение блока соц сетей на  <<Мой плейлист>></td>
+<td></td>
+<td>3</td>
+<td>content.SocialLinks@61922138</td></tr>
 </table><p>
 </body>
 </html>

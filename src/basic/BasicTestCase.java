@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -22,6 +23,7 @@ public class BasicTestCase {
 	  if (driver == null) {
 	  System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
 	  driver = new ChromeDriver();
+	  //driver = new FirefoxDriver();
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  driver.manage().timeouts().pageLoadTimeout(90, TimeUnit.SECONDS);
 	  driver.manage().window().maximize();

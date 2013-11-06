@@ -1,63 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[На странице http://music.nur.kz/audio_kz неотображается линк <<Казахская>>]]>
+      <![CDATA[Трек успешно скачан, и был удален]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="88661" started-at="2013-11-05T16:05:41Z" finished-at="2013-11-05T16:07:10Z">
+  <suite name="Default suite" duration-ms="37512" started-at="2013-11-06T11:28:19Z" finished-at="2013-11-06T11:28:57Z">
     <groups>
-      <group name="Login">
-        <method signature="Login.LogIn()[pri:0, instance:user.Login@380972f7]" name="LogIn" class="user.Login"/>
-      </group> <!-- Login -->
-      <group name="Header">
-        <method signature="Headers.MusicHeader()[pri:0, instance:content.Headers@c7dc2d]" name="MusicHeader" class="content.Headers"/>
-        <method signature="Headers.UploadHeader()[pri:0, instance:content.Headers@c7dc2d]" name="UploadHeader" class="content.Headers"/>
-        <method signature="Headers.KazahHeader()[pri:0, instance:content.Headers@c7dc2d]" name="KazahHeader" class="content.Headers"/>
-        <method signature="Headers.NovinkiHeader()[pri:0, instance:content.Headers@c7dc2d]" name="NovinkiHeader" class="content.Headers"/>
-        <method signature="Headers.PlaylistHeader()[pri:0, instance:content.Headers@c7dc2d]" name="PlaylistHeader" class="content.Headers"/>
-      </group> <!-- Header -->
     </groups>
-    <test name="Default test" duration-ms="88661" started-at="2013-11-05T16:05:41Z" finished-at="2013-11-05T16:07:10Z">
-      <class name="user.Login">
-        <test-method status="PASS" signature="LogIn()[pri:0, instance:user.Login@380972f7]" name="LogIn" duration-ms="22574" started-at="2013-11-05T18:05:41Z" description="Тестируем логин" finished-at="2013-11-05T18:06:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LogIn -->
-      </class> <!-- user.Login -->
-      <class name="content.Headers">
-        <test-method status="PASS" signature="getWebDriver()[pri:0, instance:content.Headers@c7dc2d]" name="getWebDriver" is-config="true" duration-ms="13" started-at="2013-11-05T18:05:41Z" finished-at="2013-11-05T18:05:41Z">
+    <test name="Default test" duration-ms="37512" started-at="2013-11-06T11:28:19Z" finished-at="2013-11-06T11:28:57Z">
+      <class name="upload.Download">
+        <test-method status="PASS" signature="getWebDriver()[pri:0, instance:upload.Download@13e2b8a0]" name="getWebDriver" is-config="true" duration-ms="2593" started-at="2013-11-06T13:28:19Z" finished-at="2013-11-06T13:28:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getWebDriver -->
-        <test-method status="PASS" signature="MusicHeader()[pri:0, instance:content.Headers@c7dc2d]" name="MusicHeader" duration-ms="37868" started-at="2013-11-05T18:06:03Z" description="Проверяем ссылки на шапке &lt;&lt;Музыка&gt;&gt;" finished-at="2013-11-05T18:06:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MusicHeader -->
-        <test-method status="PASS" signature="NovinkiHeader()[pri:0, instance:content.Headers@c7dc2d]" name="NovinkiHeader" duration-ms="7072" started-at="2013-11-05T18:06:41Z" description="Проверяем ссылки на шапке &lt;&lt;Новинки&gt;&gt;" finished-at="2013-11-05T18:06:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NovinkiHeader -->
-        <test-method status="PASS" signature="UploadHeader()[pri:0, instance:content.Headers@c7dc2d]" name="UploadHeader" duration-ms="4198" started-at="2013-11-05T18:06:48Z" description="Проверяем ссылки на шапке &lt;&lt;Загрузить&gt;&gt;" finished-at="2013-11-05T18:06:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UploadHeader -->
-        <test-method status="PASS" signature="PlaylistHeader()[pri:0, instance:content.Headers@c7dc2d]" name="PlaylistHeader" duration-ms="10314" started-at="2013-11-05T18:06:53Z" description="Проверяем ссылки на шапке &lt;&lt;Мой плейлист&gt;&gt;" finished-at="2013-11-05T18:07:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PlaylistHeader -->
-        <test-method status="PASS" signature="KazahHeader()[pri:0, instance:content.Headers@c7dc2d]" name="KazahHeader" duration-ms="4950" depends-on-groups="Login" started-at="2013-11-05T18:07:03Z" description="Проверяем ссылки на шапке &lt;&lt;Казахская&gt;&gt;" finished-at="2013-11-05T18:07:08Z">
+        <test-method status="PASS" signature="download()[pri:0, instance:upload.Download@13e2b8a0]" name="download" duration-ms="33301" started-at="2013-11-06T13:28:22Z" description="Проверяет скачку треков " finished-at="2013-11-06T13:28:55Z">
           <reporter-output>
             <line>
-              <![CDATA[На странице http://music.nur.kz/audio_kz неотображается линк <<Казахская>>]]>
+              <![CDATA[Трек успешно скачан, и был удален]]>
             </line>
           </reporter-output>
-        </test-method> <!-- KazahHeader -->
-        <test-method status="PASS" signature="thearDown()[pri:0, instance:content.Headers@c7dc2d]" name="thearDown" is-config="true" duration-ms="1647" started-at="2013-11-05T18:07:08Z" finished-at="2013-11-05T18:07:10Z">
+        </test-method> <!-- download -->
+        <test-method status="PASS" signature="thearDown()[pri:0, instance:upload.Download@13e2b8a0]" name="thearDown" is-config="true" duration-ms="1603" started-at="2013-11-06T13:28:55Z" finished-at="2013-11-06T13:28:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- thearDown -->
-      </class> <!-- content.Headers -->
+      </class> <!-- upload.Download -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
