@@ -1,4 +1,4 @@
-package upload;
+package download;
 
 import java.io.File;
 
@@ -14,8 +14,7 @@ import basic.BasicTestCase;
 
 public class Download extends BasicTestCase {
 	
-	String voicePC = "C:\\Users\\Voice\\Downloads\\"; //path to track on Voice PC
-	String filePath = null ; // if result
+	String filePath = null ; 
 	
 	
 
@@ -44,6 +43,7 @@ public class Download extends BasicTestCase {
 	      	}
 	       
 	    	driver.get("chrome://downloads/");
+	        Reporter.log("Ссылка на загрузку трека "+driver.findElement(By.xpath("//*[@class='src-url']")).getText(),true);
 	    
 	      /* wait until track will be downloaded */
 	      try{

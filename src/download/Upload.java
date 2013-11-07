@@ -1,4 +1,4 @@
-package upload;
+package download;
 
 import static org.testng.AssertJUnit.assertEquals;
 
