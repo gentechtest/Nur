@@ -22,12 +22,15 @@ public class Download extends BasicTestCase {
 	public void download () throws Exception {
 		WebDriverWait wait = new WebDriverWait(driver, 100);
 		driver.get(musicUrl);
+	
 		//click to download btn
 		driver.findElement(By.xpath("//*[@class='addthis control download download-track-counter']")).click(); //click to download btn
 		String errorUrl = driver.getCurrentUrl();
+		
 		/* Check PC */
 		String userName = System.getProperty("user.name");
 			  filePath = "C:\\Users\\"+userName+"\\Downloads\\";
+			  clearDownloadDir(filePath);
 		
 			
 		/* Switch to new window opened */
@@ -73,5 +76,21 @@ public class Download extends BasicTestCase {
 		    	else file.delete();
 	      		Reporter.log("Трек успешно скачан, и был удален");
 		}
+	
+	public void clearDownloadDir (String folderPath) {
+		File folder = new File(folderPath);
+		File[] listOfFiles = folder.listFiles();
+		
+		    for (int i = 0; i < listOfFiles.length; i++) {
+		      if (listOfFiles[i].isFile()) {
+		        String fileNames  = listOfFiles[i].getName();
+		        	if (fileNames.contains("(music.nur.kz).mp3.crdownload")) {
+		        		listOfFiles[i].delete();
+		        		Reporter.log("Файлы удалены",true);
+		        	}
+		      
+		      	}
+		    }
+	}
 	
 }
