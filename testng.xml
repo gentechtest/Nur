@@ -8,7 +8,6 @@
   </dependencies>
   <listeners>
   <listener class-name="basic.Log"></listener>
-  <listener class-name="basic.listen"></listener>
    <listener class-name="basic.ScreenshotOnFailure"></listener>
   </listeners>
     <classes>
